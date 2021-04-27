@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+<div class="cardsContainer">
+
+    <div class="card">
+      <h1><%= card.name %></h1>
+      <img src="/visuals/<%= card.visual_name %>" alt="<%= card.name %> illustration">
+        <ul>
+          <% if(card.element){ %>
+            <li>Element : <%= card.element %></li>
+          <% } %>
+          <li>Niveau : <%= card.level %></li>
+          <li>Value North : <%= card.value_north %></li>
+          <li>Value East :<%= card.value_east %></li>
+          <li>Value South :<%= card.value_south %></li>
+          <li>Value West :<%= card.value_west %></li>
+        </ul>
+        
+    </div>
+
+</div>
+
+
+<%- include('footer') %>
